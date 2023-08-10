@@ -18,16 +18,18 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <div className="body-inner-wrapper relative">
-          <div className="header-section fixed top-0 left-0 w-full h-20 border-2 border-black">
+          <div className="header-section fixed top-0 left-0 w-full h-20 border-2 border-black md:left-[30%] md:w-[70%]">
             <h2>{"HEADER"}</h2>
           </div>
-          <div className="footer-section fixed bottom-0 left-0 w-full h-20 border-2 border-black">
+          <div className="footer-section fixed bottom-0 left-0 w-full h-20 border-2 border-black md:top-0 md:w-[30%]">
             <h2>{"NAV"}</h2>
           </div>
-          <div className="details-card fixed bottom-0 left-0 w-full h-10 border-2 border-black">
+          <div className="details-card fixed bottom-0 left-0 w-full h-10 border-2 border-black md:h-full md:left-[50%] md:right-0 md:w-[50%] md:top-20">
             <h2>{"DETAILS CARD"}</h2>
           </div>
-          <div className="main-wrapper absolute top-0 left-0 my-20 w-full border-2 border-red-400 -z-10">{children}</div>
+          <div className="main-wrapper fixed top-20 left-0 bottom-20 w-full border-2 border-red-400 -z-10 overflow-y-scroll md:w-[50%] md:bottom-0">
+            {children}
+          </div>
         </div>
       </body>
     </html>
