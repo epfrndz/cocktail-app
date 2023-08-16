@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-interface CardProps {
+export interface CardProps {
   name: string;
   url: string;
   imagesrc?: string;
