@@ -2,7 +2,7 @@ import Card, { CardProps } from "./Card";
 
 const CardList: React.FC<{cards: CardProps[]}> = ({ cards }) => {
   return (
-    <div className="cards-container mt-4 w-[90vw] md:w-[45vw]">
+    <div className="cards-container mt-4 grid grid-cols-cards gap-6">
       {cards.map((card) => (
         <Card key={card.name} {...card} />
       ))}

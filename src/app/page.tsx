@@ -21,6 +21,10 @@ export default function Home() {
       name: "Margarita",
       url: "/drinks/margarita",
     },
+    {
+      name: "Margarita",
+      url: "/drinks/margarita",
+    },
   ]
 
   return (
